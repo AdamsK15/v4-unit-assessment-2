@@ -1,3 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: nunito;
+    font-size: auto
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    height: 15vh;
+    background-color: rgb(37, 37, 37);
+}
+
+h1 {
+    width: 60vh;
+    color: rgb(42, 171, 226);
+}
+
+ul > li {
+    color: white;
+    padding-right: 10px;
+    top: 10px;
+    right: 80px;
+    list-style: none;
+    display: inline;
+}
+
+main {
+    margin: 50px 50vh 25px 50vh;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+aside {
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+aside > h3 {
+    margin-bottom: 5px;
+}
+
+.img-gallery img {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    background-color: rgb(37, 37, 37);
+}
+
+aside img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
 /* 
 
 these are the colors used in the example

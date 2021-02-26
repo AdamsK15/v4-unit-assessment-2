@@ -37,6 +37,8 @@ let foods = [
 
 //CODE HERE
 
+
+
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
   For problems 2-4, you will be working with the products array below.
@@ -81,6 +83,8 @@ const products = [
 */
 
 //CODE HERE
+
+
 
 ////////////////////PROBLEM 3////////////////////
 /*
