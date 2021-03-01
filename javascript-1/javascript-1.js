@@ -355,6 +355,7 @@ let phone3 = new Phone('ZackMorris', 'Brick', 0.5, 'beige', false)
 
 //CODE HERE
 
-Phone.prototype.sell = function () {
-
+Phone.prototype.sell = function (purchased) {
+    this.sold === true
+    return `${this.brand} has been sold.`
 }

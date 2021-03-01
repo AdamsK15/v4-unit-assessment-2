@@ -37,7 +37,9 @@ let foods = [
 
 //CODE HERE
 
+foods.forEach(function (prop) {
 
+})
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -84,7 +86,9 @@ const products = [
 
 //CODE HERE
 
-
+let saleProducts = products.map(function (element) {
+  return element.price * 0.25
+})
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -96,6 +100,8 @@ const products = [
 
 //CODE HERE
 
+let blueProducts = products.filter(element => (element.color = 'blue'))
+
 ////////////////////PROBLEM 4////////////////////
 /*
   Now you'd like to get them their order total. 
@@ -104,6 +110,8 @@ const products = [
 */
 
 //CODE HERE
+
+let orderTotal = blueProducts.reduce(element => (element.price))
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -135,6 +143,8 @@ const shippingInfo = {
 
 //CODE HERE
 
+let helensInfo = Object.assign(contactInfo, shippingInfo)
+
 ////////////////////PROBLEM 6////////////////////
 /*
   Helen has a daughter named Ellen that lives at the same address.
@@ -144,12 +154,18 @@ const shippingInfo = {
 
 //CODE HERE
 
+let ellensInfo = { ...helensInfo }
+
+
+
 ////////////////////PROBLEM 7////////////////////
 /* 
   Save Ellen's email to a new variable using destructuring.
 */
 
 //CODE HERE
+
+let [email] = ellensInfo
 
 ////////////////////PROBLEM 8////////////////////
 /*
@@ -158,6 +174,8 @@ const shippingInfo = {
 */
 
 //CODE HERE
+
+let [state, zipCode] = ellensInfo
 
 //////////////////////////////////PROBLEMS 9-11//////////////////////////////////
 /*
@@ -221,6 +239,8 @@ const userInfo = {
 
 //CODE HERE
 
+let shouldAlert = userInfo.alerts
+
 ////////////////////PROBLEM 10////////////////////
 /*
   Set the value of topic below to the last item in gn@rly_c0der_007's topics array
@@ -229,6 +249,8 @@ const userInfo = {
 
 //CODE HERE
 
+let topic = userInfo.topics
+
 ////////////////////PROBLEM 11////////////////////
 /*
   Set the value of commenterId below to the userId of the first response to 
@@ -236,6 +258,8 @@ const userInfo = {
 */
 
 //CODE HERE
+
+let commenterId = userInfo
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -255,6 +279,14 @@ const userInfo = {
 */
 
 //CODE HERE
+
+let person = {
+  name: '',
+  age: Number,
+  jobs: [],
+  birthday: function () { this.age + 1 },
+  favorites: { color: '', number: Number, book: '', kids: [{ name: '', age: Number }, { name: '', age: Number }] }
+}
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -277,10 +309,10 @@ const workout = {
   },
 }
 
-//let context1 = myFunc
-//let context1 = window
-//let context1 = global
-// let context1 = workout
+// let context1 = myFunc
+// let context1 = window
+// let context1 = global
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -292,7 +324,7 @@ function myFunc() {
   return this
 }
 
-//let context2 = myFunc
+let context2 = myFunc
 // let context2 = window
 //let context2 = global
 //let context2 = workout
